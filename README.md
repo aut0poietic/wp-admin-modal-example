@@ -12,7 +12,7 @@ The two folders in the repository, "modal-backbone" and "modal-iframe" represent
 implement modals similar to those created in wp.media.view.Modal. They each represent different development path;
 it's up to you to choose the type that's appropriate for your plugin.
 
-IFrame Modal
+## IFrame Modal ##
 ______________________
 
 The plugin in "modal-iframe" has a UI consistent with the Media Modal, but uses only jQuery for it's JavaScript
@@ -21,13 +21,13 @@ interaction and an IFrame to display the content.
 Use of this style of modal allows the modal content to remain isolated from the Add/Edit Post/Page. Resources used
 in the workflow aren't loaded until they're actually used. It's also very easy to customize for your own plugins.
 
-Backbone Modal
+## Backbone Modal ##
 ______________________
 The plugin in the "modal-backbone" folder also has a UI in-line with the Media Modal. However, this modal is a full
 Backbone application, ready for you to extend.  The application uses a custom "Templates" class to defer loading the
 html for the UI until it's needed.
 
-General Info
+## General Info ##
 ______________________
 
 Both plugins strive to implement WordPress PHP and JavaScript as well as Backbone best practices, including localization
@@ -40,7 +40,7 @@ that makes the example better.
 
 See [WordPress Answers question: "Is it possible to reuse wp.media.editor Modal for dialogs other than media" ](http://wordpress.stackexchange.com/questions/85442/)
 
-License
+## License ##
 ______________________
 
 Copyright (C) 2013  [Jer Brand / aut0poietic](http://irresponsibleart.com)
