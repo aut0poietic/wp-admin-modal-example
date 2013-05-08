@@ -28,7 +28,7 @@ html for the UI until it's needed.
 
 ## General Info ##
 
-Both plugins strive to implement WordPress PHP and JavaScript as well as Backbone best practices, including localization
+Both plugins are filled with a copious amount of comments and strive to implement WordPress PHP and JavaScript as well as Backbone best practices, including localization
 class wrapping and namespacing, to name a few. It's also Delete-Key-Friendly: If you prefer to go it another way, have fun.
 
 Comments, issues and pull requests are very welcome as I'll be happy to include any best practice or time-saving technique
