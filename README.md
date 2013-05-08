@@ -1,5 +1,5 @@
-WordPres 3.5 Media Modal Clone
-======================
+#WordPres 3.5 Media Modal Clone#
+
 
 The WordPress Media Modal introduced in version 3.5 is nice clean interface element that I thought
 represented the shape of things to come for opening dialogs.
@@ -13,7 +13,6 @@ implement modals similar to those created in wp.media.view.Modal. They each repr
 it's up to you to choose the type that's appropriate for your plugin.
 
 ## IFrame Modal ##
-______________________
 
 The plugin in "modal-iframe" has a UI consistent with the Media Modal, but uses only jQuery for it's JavaScript
 interaction and an IFrame to display the content.
@@ -22,13 +21,12 @@ Use of this style of modal allows the modal content to remain isolated from the 
 in the workflow aren't loaded until they're actually used. It's also very easy to customize for your own plugins.
 
 ## Backbone Modal ##
-______________________
+
 The plugin in the "modal-backbone" folder also has a UI in-line with the Media Modal. However, this modal is a full
 Backbone application, ready for you to extend.  The application uses a custom "Templates" class to defer loading the
 html for the UI until it's needed.
 
 ## General Info ##
-______________________
 
 Both plugins strive to implement WordPress PHP and JavaScript as well as Backbone best practices, including localization
 class wrapping and namespacing, to name a few. It's also Delete-Key-Friendly: If you prefer to go it another way, have fun.
@@ -41,7 +39,6 @@ that makes the example better.
 See [WordPress Answers question: "Is it possible to reuse wp.media.editor Modal for dialogs other than media" ](http://wordpress.stackexchange.com/questions/85442/)
 
 ## License ##
-______________________
 
 Copyright (C) 2013  [Jer Brand / aut0poietic](http://irresponsibleart.com)
 
