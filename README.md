@@ -1,5 +1,6 @@
 #WordPres 3.5 Media Modal Clone#
 
+![](screenshot.png)
 
 The WordPress Media Modal introduced in version 3.5 is nice clean interface element that I thought
 represented the shape of things to come for opening dialogs.
