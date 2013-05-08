@@ -1,0 +1,162 @@
+/*
+	The styles below were ripped from the Media Modal in WordPress 3.5
+	~~ Thanks for building a beautiful Modal UI ( that I could steal )
+*/
+.backbone_modal {
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	right: 30px;
+	bottom: 30px;
+	z-index: 160000;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+.backbone_modal .backbone_modal-close {
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	width: 30px;
+	height: 30px;
+	z-index: 1000;
+}
+.backbone_modal .backbone_modal-close span {
+	display: block;
+	margin: 8px auto 0;
+	width: 15px;
+	height: 15px;
+	background: transparent url(../images/close.png) -22px 0 no-repeat;
+}
+.backbone_modal .backbone_modal-close:hover span {
+	background: transparent url(../images/close.png) -2px 0 no-repeat;
+}
+.backbone_modal .backbone_modal-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	min-height: 300px;
+	background: #fff;
+}
+.backbone_modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-height: 360px;
+	background: #000;
+	opacity: .7;
+	z-index: 159900;
+}
+.navigation-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 199px;
+	z-index: 150;
+}
+.navigation-bar nav {
+	display:block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 16px 0;
+	border-right: 1px solid #d9d9d9;
+	box-shadow: inset -6px 0 6px -6px rgba(0,0,0,0.2);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.navigation-bar nav ul {
+	display:block;
+	padding: 16px;
+	margin: 0;
+	list-style: none;
+}
+.navigation-bar nav ul li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.navigation-bar nav ul li.separator {
+	height: 0;
+	margin: 12px 20px;
+	padding: 0;
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #fff;
+}
+.navigation-bar nav a {
+	display: block;
+	position: relative;
+	padding: 4px 20px;
+	margin: 0;
+	line-height: 18px;
+	font-size: 14px;
+	color: #21759b;
+	text-shadow: 0 1px 0 #fff;
+	text-decoration: none;
+}
+.navigation-bar nav a:hover ,
+.navigation-bar nav a:focus {
+	background-color: rgba(0, 0, 0, 0.04);
+}
+.backbone_modal-main {
+	position: absolute;
+	top: 0;
+	left: 200px;
+	right: 0;
+	bottom: 0 ;
+	z-index: 200;
+}
+.backbone_modal-main article, .backbone_modal-main header {
+	display: block;
+	position: relative;
+	padding: 4px 16px;
+}
+.backbone_modal-main h1 {
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 45px;
+	margin: 0;
+}
+.backbone_modal-main footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 30px;
+	z-index: 100;
+	padding: 10px 0px;
+	border: 0 solid #dfdfdf;
+	border-width: 1px 0 0 0;
+	box-shadow: 0 -4px 4px -4px rgba(0,0,0,0.1);
+}
+.backbone_modal-main footer .inner {
+	padding: 0 16px;
+}
+.text-right {
+	text-align: right;
+}
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
