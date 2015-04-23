@@ -3,17 +3,9 @@
  * Backbone Templates
  * This file contains all of the HTML used in our modal and the workflow itself.
  *
- * We use this external file as well as the wp_ajax call to give the templates complete access to the
- * WordPress system and allow for easy localization.
- *
- * Each template is wrapped in a script block ( note the type is set to "text/html" ) and given an ID.
- * The Template class in the Backbone application grabs and converts these blocks into compiled templates
- * to be used and reused in your application.
- *
- * The entire thing is wrapped in a single empty div tag as it's set as the $el of the template class ( and must
- * be a single object, not multiple ).
- *
- * Again, you don't have to use this UI assembly pattern -- I personally find it useful.
+ * Each template is wrapped in a script block ( note the type is set to "text/html" ) and given an ID prefixed with
+ * 'tmpl'. The wp.template method retrieves the contents of the script block and converts these blocks into compiled
+ * templates to be used and reused in your application.
  */
 
 
