@@ -27,10 +27,15 @@ The plugin in the "modal-backbone" folder also has a UI in-line with the Media M
 Backbone application, ready for you to extend.  The application uses a custom "Templates" class to defer loading the
 html for the UI until it's needed.
 
+### WordPress 4.0+ WP.Template ###
+The templating the backbone mobile uses wp.template() class and provides a rudimentary example of how to include your
+own template script-blocks into the WordPress admin's footer and reference those in your JavaScript application.
+
 ## General Info ##
 
-Both plugins are filled with a copious amount of comments and strive to implement WordPress PHP and JavaScript as well as Backbone best practices, including localization
-class wrapping and namespacing, to name a few. It's also Delete-Key-Friendly: If you prefer to go it another way, have fun.
+Both plugins are filled with a copious amount of comments and strive to implement WordPress PHP and JavaScript as well
+as Backbone best practices, including localization class wrapping and namespacing, to name a few.
+It's also Delete-Key-Friendly: If you prefer to go it another way, have fun.
 
 Comments, issues and pull requests are very welcome as I'll be happy to include any best practice or time-saving technique
 that makes the example better.
