@@ -52,8 +52,7 @@ aut0poietic.backbone_modal.Templates = Backbone.View.extend(
 
 		initialize : function () {
 			"use strict";
-
-			_.bindAll( this );
+			_.bindAll( this , 'load', 'done', 'fail', 'get' );
 		} ,
 
 		/**
@@ -88,7 +87,6 @@ aut0poietic.backbone_modal.Templates = Backbone.View.extend(
 		 */
 		fail : function () {
 			"use strict";
-
 			// don't send event, signal error.
 		} ,
 
@@ -142,7 +140,7 @@ aut0poietic.backbone_modal.Application = Backbone.View.extend(
 		initialize : function () {
 			"use strict";
 
-			_.bindAll( this );
+			_.bindAll( this , 'render', 'preserveFocus', 'closeModal', 'saveModal', 'doNothing' );
 			this.templates = new aut0poietic.backbone_modal.Templates();
 			this.templates
 				.on( this.templates.loadEvent , this.render )

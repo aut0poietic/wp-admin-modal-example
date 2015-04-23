@@ -80,7 +80,7 @@
 		public function add_scripts( $hook ) {
 			if ( $hook === 'post.php' || $hook === 'post-new.php' ) {
 				$base = plugin_dir_url( __FILE__ );
-				wp_enqueue_script( 'backbone_modal' , $base . 'js/modal.js' , array( 'jquery' ) );
+				wp_enqueue_script( 'backbone_modal' , $base . 'js/modal.js' , array( 'jquery', 'backbone', 'underscore' ) );
 				wp_localize_script( 'backbone_modal' , 'aut0poietic_backbone_modal_l10n' ,
 					array(
 						'replace_message' => __( 'This is dummy content. You should add something here.' , 'backbone_modal' )
