@@ -15,10 +15,14 @@ jQuery( function ( $ ) {
 		var url = $( e.currentTarget ).attr( "data-content-url" ) ,
 			$dialogHTML = $('<div tabindex="0" id="iframe_modal_dialog" role="dialog"><div class="iframe_modal" ><a role="button" class="iframe_modal-close" href="#" title="'+aut0poietic_iframe_modal_l10n.close_label+'"><span class="iframe_modal-icon ir">'+aut0poietic_iframe_modal_l10n.close_label+'</span></a><div class="iframe_modal-content"><iframe id="iframe_modal-frame" src="" scrolling="no" frameborder="0" allowtransparency="true"></iframe></div></div><div class="iframe_modal-backdrop" role="presentation"></div></div>' );
 
+		/*
+		//this check is not needed any more as aut0poietic_iframe_modal_l10n will be now available as added in modal.php file in proper way
 		if( typeof window.aut0poietic_iframe_modal_l10n === 'object' ) {
 			$dialogHTML.find( '.iframe_modal-close' ).attr( 'title' , aut0poietic_iframe_modal_l10n.close_label ) ;
 			$dialogHTML.find( '.iframe_modal-icon' ).text( aut0poietic_iframe_modal_l10n.close_label ) ;
 		}
+		*/
+		
 		// Sets the URL of the iframe
 		$dialogHTML.find('#iframe_modal-frame' ).attr('src' , url );
 
