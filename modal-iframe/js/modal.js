@@ -13,7 +13,7 @@ jQuery( function ( $ ) {
 
 		// Retrieve the URL for th iframe stored in data-content-url created in Plugin::metabox_content
 		var url = $( e.currentTarget ).attr( "data-content-url" ) ,
-			$dialogHTML = $('<div tabindex="0" id="iframe_modal_dialog" role="dialog"><div class="iframe_modal" ><a role="button" class="iframe_modal-close" href="#" title="Close"><span class="iframe_modal-icon ir">Close</span></a><div class="iframe_modal-content"><iframe id="iframe_modal-frame" src="" scrolling="no" frameborder="0" allowtransparency="true"></iframe></div></div><div class="iframe_modal-backdrop" role="presentation"></div></div>' );
+			$dialogHTML = $('<div tabindex="0" id="iframe_modal_dialog" role="dialog"><div class="iframe_modal" ><a role="button" class="iframe_modal-close" href="#" title="'+aut0poietic_iframe_modal_l10n.close_label+'"><span class="iframe_modal-icon ir">'+aut0poietic_iframe_modal_l10n.close_label+'</span></a><div class="iframe_modal-content"><iframe id="iframe_modal-frame" src="" scrolling="no" frameborder="0" allowtransparency="true"></iframe></div></div><div class="iframe_modal-backdrop" role="presentation"></div></div>' );
 
 		if( typeof window.aut0poietic_iframe_modal_l10n === 'object' ) {
 			$dialogHTML.find( '.iframe_modal-close' ).attr( 'title' , aut0poietic_iframe_modal_l10n.close_label ) ;
