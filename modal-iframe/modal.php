@@ -62,11 +62,13 @@
 		 * @param $post WordPress post object
 		 */
 		public function metabox_content( $post ) {
+			//adding nonce to improve security
+			$complete_url = wp_nonce_url( admin_url( 'admin-ajax.php?action=modal_frame_content&post_id='.$post->ID ), 'modal_frame_content_'.$post->ID);
+			
 			print sprintf(
-				'<input type="button" class="button button-primary " id="open-iframe_modal" value="%1$s" data-content-url="%3$s%2$d">' ,
-				__( 'Open IFrame Modal' , 'iframe_modal' ) ,
-				$post->ID ,
-				admin_url( 'admin-ajax.php?action=modal_frame_content&post_id=' ) );
+				'<input type="button" class="button button-primary " id="open-iframe_modal" value="%1$s" data-content-url="%2$s">' ,
+				__( 'Open IFrame Modal' , 'iframe_modal' ) ,				
+				$complete_url );
 		}
 
 		/**
@@ -100,6 +102,9 @@
 		 * content in the include file itself.
 		 */
 		public function modal_frame_content() {
+			//check nonce
+			check_admin_referer( 'modal_frame_content_'.$_GET['post_id'] );
+			
 			wp_enqueue_style( 'iframe_modal-content' , plugin_dir_url( __FILE__ ) . 'css/modal-content.css' );
 			wp_enqueue_script( 'iframe_modal-content' , plugin_dir_url( __FILE__ ) . 'js/modal-content.js' , array( 'jquery' ) );
 			include( 'modal-content.php' );
