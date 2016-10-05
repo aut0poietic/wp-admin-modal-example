@@ -84,8 +84,10 @@
 		public function add_scripts( $hook ) {
 			if ( $hook === 'post.php' || $hook === 'post-new.php' ) {
 				$base = plugin_dir_url( __FILE__ );
-				wp_enqueue_script( 'iframe_modal' , $base . 'js/modal.js' , array( 'jquery' ) );
+				
 				wp_enqueue_style( 'iframe_modal' , $base . 'css/modal.css' );
+				
+				wp_register_script( 'iframe_modal' , $base . 'js/modal.js' , array( 'jquery' ) );
 				wp_localize_script(
 					'iframe_modal' ,
 					'aut0poietic_iframe_modal_l10n',
@@ -93,6 +95,8 @@
 						"close_label" => __( 'Close Dialog' , 'iframe_modal' )
 					)
 				);
+				
+				wp_enqueue_script( 'iframe_modal');
 			}
 		}
 
